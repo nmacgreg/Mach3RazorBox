@@ -9,20 +9,19 @@
 * I'm learning about ChatGPT
 * Let's experiment with ChatGPT's 3D modelling abilities, to see if it can generate a workable model.
 
-## ChatGPT Generated: 
+## I updated the model
 
-* ![ChatGPT_Box](https://user-images.githubusercontent.com/3227828/217967203-923cb91d-e59a-4a91-b7d3-76546bf98dcc.png)
+* ![MyRazorBox](https://user-images.githubusercontent.com/3227828/218000080-215b86a5-655d-41bb-9664-acd5ed501bf0.png)
 
-## Analysis:
+## Steps
 
-* OK, so it renders in OpenSCAD...
-* And, I really appreciate the the "height", "width", and "depth" variables right at the top of the design, so I can resize it to fit
-* Eyeballing the image above, that little lip that looks like it might take a lid is gravvy!
-* And, the dimensions seem plausible!
-* And the comments are nice!
-* But when you dig into it
-  * Actually, if I enter the x/y/z measurements of the box's contents as height/width/depth variable, the model messes up
-  * And you discover height/width/depth are the *outside* dimensions of the box
-  * And the interior lip disappears, because it's dimensions aren't calculated - they're hardcoded
-  * And, that interior lip isn't something I asked for, and I don't quite want it
-  * This model is a mess!  It's not Parametric!
+* Parameters now represent my measurements - length, width, & height
+* Another parameter for wall thickness
+* A "tolerance" parameter allows tunig it to an individual printer's accuracy
+* The interior lip is gone - didn't want that
+
+## Proof
+
+![PXL_20230210_042931711](https://user-images.githubusercontent.com/3227828/218001492-ae43f79b-30b0-4eca-b0ec-810ae6fd43ff.jpg)
+![PXL_20230210_043009929](https://user-images.githubusercontent.com/3227828/218001475-c51c1e93-e5bf-483b-bff4-f6146eb1700f.jpg)
+
